@@ -21,6 +21,7 @@ public class VistaDocsFamilia {
 	JLabel labelBuscador =  new JLabel();
 	JTextField jtxtBuscador =  new JTextField();
 	public JButton btnRegresar = new JButton();
+	public JButton btnCerrar = new JButton();
 	
 	public VistaDocsFamilia() {
 		// TODO Auto-generated constructor stub
@@ -44,6 +45,7 @@ public class VistaDocsFamilia {
 		labelBuscador.setText("Buscar: ");
 		labelBuscador.setFont(new Font("Arial", 1, 15));
 		ventana.ventana.add(labelBuscador);
+		ventana.ventana.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 	}
 	
 	public void agregarCajasTexto() {
@@ -54,19 +56,16 @@ public class VistaDocsFamilia {
 	
 	public void agregarBoton() {
 		
-		btnRegresar.setBounds(1100, 30, 100, 30);
+		btnRegresar.setBounds(1020, 30, 100, 30);
 		btnRegresar.setText("Regresar");
 		ventana.ventana.add(btnRegresar);
+		btnCerrar.setBounds(1125, 30, 140, 30);
+		btnCerrar.setText("Cerrar Sesión");
+		ventana.ventana.add(btnCerrar);
 		
 	}
 	
 	
 	
-public void cerrarFrame() {
-		
-	ventana.ventana.dispose();
-	
-
-}
 
 }

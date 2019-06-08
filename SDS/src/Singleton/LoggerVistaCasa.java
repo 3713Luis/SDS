@@ -1,5 +1,6 @@
 package Singleton;
 
+import controlador.MenuCasaController;
 import vista.VistaDocsCasa;
 
 public class LoggerVistaCasa {
@@ -23,7 +24,7 @@ public class LoggerVistaCasa {
 	}
 	
 	public void abrirMenuCasa() {
-		new VistaDocsCasa();
+		new MenuCasaController();
 
 	}
 

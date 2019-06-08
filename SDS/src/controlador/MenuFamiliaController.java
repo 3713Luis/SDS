@@ -11,6 +11,7 @@ public class MenuFamiliaController implements ActionListener{
 	public MenuFamiliaController() {
 		// TODO Auto-generated constructor stub
 		familia.btnRegresar.addActionListener(this);
+		familia.btnCerrar.addActionListener(this);
 
 	}
 
@@ -23,6 +24,9 @@ public class MenuFamiliaController implements ActionListener{
 			new MenuController(); 
 
 		
+		}else if (e.getSource()==familia.btnCerrar) {
+			
+			System.exit(1);
 		}
 	}
 	
